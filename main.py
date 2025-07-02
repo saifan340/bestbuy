@@ -47,11 +47,11 @@ def make_order():
         except ValueError:
             print("Invalid input. Please enter numeric values.")
 
-        try:
-            total_price = best_buy.order(order_list)
-            print(f"Order cost: {total_price} dollars.")
-        except Exception as e:
-               print(f"Order failed: {e}")
+    try:
+        total_price = best_buy.order(order_list)
+        print(f"Order cost: {total_price} dollars.")
+    except Exception as e:
+           print(f"Order failed: {e}")
 
 
 def quit():
